@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Video Downloader Online - Fast & Free</title>
+    
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <style>
+        :root {
+            --brand-dark: #2c3e50;
+            --brand-accent: #1abc9c;
+            --bg-color: #ecf0f1;
+            --text-main: #333333;
+            --text-muted: #7f8c8d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Navbar Styling - Premium & Aligned */
+        .navbar-custom {
+            background-color: var(--brand-dark);
+            border: none;
+            border-radius: 0;
+            margin-bottom: 0;
+            min-height: 70px; /* Slightly taller for premium feel */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        /* Flex container for the whole navbar to ensure perfect vertical alignment */
+        .navbar-custom .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 70px;
+        }
+
+        .navbar-custom .navbar-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-custom .navbar-collapse {
+            border-top: none;
+            box-shadow: none;
+            flex-grow: 1;
+            display: flex !important; /* Force flex in desktop */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-custom .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .navbar-custom .navbar-nav > li > a {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            font-size: 15px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px; /* Space between icon and text */
+        }
+        
+        .navbar-custom .navbar-nav > li > a:hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .navbar-custom .navbar-brand {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            height: auto;
+            padding: 0;
+            margin-right: 30px;
+            transition: opacity 0.3s ease;
+            letter-spacing: -0.5px;
+        }
+        
+        .navbar-custom .navbar-brand:hover {
+            opacity: 0.9;
+        }
+        
+        /* Premium Logo Icons */
+        .logo-icon {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            font-weight: bold;
+            font-size: 24px;
+            font-family: serif;
+            margin-right: 12px;
+            box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
+        }
+        
+        .main-logo-icon {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            font-weight: bold;
+            font-size: 46px;
+            font-family: serif;
+            margin-right: 16px;
+            vertical-align: middle;
+            box-shadow: 0 8px 24px rgba(26, 188, 156, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Adjustments for Navbar Flex */
+        @media (max-width: 767px) {
+            .navbar-custom .container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .navbar-custom .navbar-header {
+                justify-content: space-between;
+                width: 100%;
+                padding: 10px 0;
+            }
+            .navbar-custom .navbar-collapse {
+                flex-direction: column;
+                align-items: stretch;
+                display: none !important; /* Hide by default on mobile for collapse toggle */
+            }
+            .navbar-custom .navbar-collapse.in {
+                display: flex !important;
+            }
+            .navbar-custom .navbar-nav {
+                flex-direction: column;
+            }
+            .navbar-custom .navbar-nav > li > a {
+                padding: 12px 15px;
+            }
+        }
+
+        /* Jumbotron / Main Area */
+        .jumbotron-custom {
+            background-color: transparent;
+            padding-top: 60px;
+            padding-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .brand-title-large {
+            font-size: 42px;
+            color: var(--brand-dark);
+            font-weight: 700;
+            display: inline-block;
+            vertical-align: middle;
+            letter-spacing: -1px;
+        }
+
+        .jumbotron-custom h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--brand-dark);
+            margin-top: 30px;
+            letter-spacing: -0.5px;
+        }
+        .jumbotron-custom h2 {
+            font-size: 18px;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-top: 8px;
+            margin-bottom: 40px;
+        }
+
+        /* Embedded Widget Area */
+        .widget-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .widget-container:hover {
+            transform: translateY(-4px);
+        }
+        
+        /* Decorative glow behind widget */
+        .widget-container::before {
+            content: "";
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+            background: rgba(26, 188, 156, 0.15);
+            filter: blur(40px);
+            z-index: -1;
+            border-radius: 20px;
+        }
+
+        /* How to Use Button */
+        .btn-howto {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-howto:hover {
+            background-color: #2980b9;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Unique Content Container - Premium Look */
+        .unique-content {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+            text-align: left;
+            line-height: 1.8;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+        
+        .unique-content h2 {
+            color: var(--brand-accent);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+            letter-spacing: -0.5px;
+        }
+
+        .unique-content h3 {
+            color: var(--brand-dark);
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            letter-spacing: -0.3px;
+        }
+
+        .unique-content p {
+            color: #5a6c7d;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .unique-content ul, .unique-content ol {
+            padding-left: 20px;
+            margin-bottom: 24px;
+        }
+
+        .unique-content li {
+            font-size: 16px;
+            color: #5a6c7d;
+            margin-bottom: 12px;
+        }
+        
+        .unique-content li strong {
+            color: var(--brand-dark);
+        }
+
+        /* Footer */
+        .footer-links {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 20px;
+        }
+        .footer-links strong {
+            color: var(--brand-dark);
+            font-size: 16px;
+        }
+        .footer-links .nav-links {
+            margin: 15px 0 25px 0;
+        }
+        .footer-links a {
+            color: var(--brand-dark);
+            font-weight: 600;
+            margin: 0 12px;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .footer-links a:hover {
+            color: var(--brand-accent);
+        }
+        .footer-links p {
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+            opacity: 0.8;
+        }
+        
+        /* Utility */
+        .icon-align {
+            display: inline-flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <div class="logo-icon">f</div> FDOWN
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar" style="background-color:white;"></span>
+                    <span class="icon-bar" style="background-color:white;"></span>
+                    <span class="icon-bar" style="background-color:white;"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> How to?</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span> More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Private Downloader</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="https://flagcdn.com/w20/us.png" alt="EN" style="border-radius:2px;"> EN <span class="caret"></span></a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="#" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 10px 20px;"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" width="16" alt="Chrome"> Chrome Extension</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="jumbotron-custom">
+        <div class="container">
+            <!-- Logo Section -->
+            <div style="margin-bottom: 10px;">
+                <div class="main-logo-icon">f</div> 
+                <span class="brand-title-large">FDOWN</span>
+            </div>
+            
+            <h1>Facebook Video Downloader</h1>
+            <h2>Download Facebook Videos Online Instantly</h2>
+            
+            <!-- Embedded Widget Area -->
+            <div class="widget-container">
+                <iframe src="https://fbdownlo.com/widget" width="100%" height="350" frameborder="0" style="border-radius:16px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);" allowtransparency="true"></iframe>
+            </div>
+            
+            <!-- How to Use Button -->
+            <button type="button" class="btn-howto">
+                <span class="glyphicon glyphicon-play-circle"></span> Watch How to Use FDOWN
+            </button>
+            
+        </div>
+    </div>
+
+    <!-- Unique Extended Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="unique-content">
+                    <h2>The Best Way to Download Facebook Videos Online</h2>
+                    
+                    <p>Welcome to <strong>FDOWN</strong>, your ultimate online companion for saving Facebook videos directly to your device. Whether you are using a smartphone, tablet, or desktop computer, our seamless integration allows you to instantly fetch, convert, and download any public Facebook video in just a few clicks. You don't need to install any heavy software or deal with complicated setups—simply use the tool above and get your MP4 file ready for offline viewing.</p>
+
+                    <h3>Why Choose FDOWN for Facebook Video Downloads?</h3>
+                    <p>Downloading content from Facebook shouldn't be a hassle. We built FDOWN keeping simplicity, speed, and quality in mind. Here is why millions of users trust our downloader every day:</p>
+                    <ul>
+                        <li><strong>Incredible Speeds:</strong> Our tool is optimized to process Facebook video URLs and generate download links within seconds. Say goodbye to endless loading screens!</li>
+                        <li><strong>High Definition (HD) Quality:</strong> We provide you with the best available resolution for every video. If the original uploader uploaded a 1080p or 4K video, you can download it in pristine HD quality.</li>
+                        <li><strong>100% Free & Unlimited:</strong> There are no paywalls, hidden fees, or limits on how many videos you can save. Download to your heart's content!</li>
+                        <li><strong>No App Installation Required:</strong> Since FDOWN is entirely web-based, you only need a modern web browser (like Chrome, Safari, Firefox, or Edge) to use it. Save your device storage for your newly downloaded videos.</li>
+                        <li><strong>Cross-Device Compatibility:</strong> FDOWN works flawlessly across Windows, macOS, Linux, Android, and iOS devices. Take your videos anywhere.</li>
+                    </ul>
+
+                    <h3>How to Save Videos to Your Gallery or Computer</h3>
+                    <p>It's never been easier. Follow these three simple steps:</p>
+                    <ol>
+                        <li><strong>Find your video:</strong> Open the Facebook app or website and locate the video you want to keep. Click on the "Share" button and select "Copy Link".</li>
+                        <li><strong>Paste the Link:</strong> Come back to FDOWN and paste the copied URL into our download widget at the top of the page.</li>
+                        <li><strong>Download & Enjoy:</strong> Click the download icon, choose your preferred video quality (Standard or HD), and the video will instantly begin downloading to your device's default downloads folder.</li>
+                    </ol>
+
+                    <h3>Private Facebook Videos & Reels</h3>
+                    <p>Wondering if you can download Facebook Reels or videos from private groups? The answer is yes! FDOWN supports downloading short-form Reels with the same ease as regular videos. For private videos, ensure you have the proper access to the video source and utilize our dedicated Private Downloader tool (accessible from the top menu) to fetch the media securely.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-links">
+                    <strong>FDOWN Video Downloader Online</strong>
+                    
+                    <div class="nav-links">
+                        <a href="#">How to Download</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">About</a>
+                    </div>
+                    
+                    <p>We do not host any videos on our servers. All videos that you download are hosted on Facebook's CDNs.</p>
+                    <p><strong>This website is a Social Media Services website and is not associated by any means to Facebook or the Facebook brand and doesn't have anything to do with Meta Platforms, Inc.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
