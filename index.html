@@ -114,9 +114,40 @@
       background: rgba(255,255,255,.88); border: 1px solid rgba(255,255,255,.95);
       border-radius: var(--radius); box-shadow: var(--shadow);
     }
-    .tool-frame { width: 100%; height: 280px; border: 0; border-radius: 17px; background: #fff; }
+    .tool-frame { width: 100%; height: 280px; border: 0; border-radius: 17px; }
     .trust-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 20px; margin: 18px auto 0; color: #51615e; font-size: .88rem; }
     .trust-row span::before { content: "✓"; color: var(--brand); font-weight: 900; margin-right: 7px; }
+
+    .coffee-banner {
+      width: min(760px, 100%);
+      margin: 24px auto 0;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid #d8e9e5;
+      border-radius: 16px;
+      color: #53615e;
+      box-shadow: 0 8px 24px rgba(15,42,38,.05);
+      font-size: .92rem;
+    }
+    .coffee-banner p { margin: 0; }
+    .coffee-banner a {
+      color: var(--brand);
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .coffee-banner a:hover { color: var(--brand-dark); }
+    .coffee-icon {
+      width: 34px; height: 34px; flex: 0 0 34px;
+      display: grid; place-items: center;
+      border-radius: 10px;
+      background: #fff3cf;
+      font-size: 1.05rem;
+    }
 
     .section { padding: 76px 0; }
     .section-alt { background: var(--surface); }
@@ -301,6 +332,16 @@
         <span>Works on modern browsers</span>
         <span>Use only with appropriate rights</span>
       </div>
+
+      <!-- Compact support banner: intentionally placed only in the top section -->
+      <aside class="coffee-banner" aria-label="Support FDOWN">
+        <span class="coffee-icon" aria-hidden="true">☕</span>
+        <p>
+          Enjoying FDOWN? Please
+          <a href="https://ko-fi.com/cnvmp3" target="_blank" rel="noopener noreferrer">buy us a coffee</a>
+          so we can keep this website ad-free.
+        </p>
+      </aside>
     </div>
   </section>
 
@@ -425,17 +466,6 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="support">
-        <div>
-          <h2>Support an ad-free experience</h2>
-          <p>If FDOWN is useful to you, optional support helps with ongoing infrastructure and maintenance costs.</p>
-        </div>
-        <a class="button" href="https://buymeacoffee.com/downy" target="_blank" rel="noopener noreferrer">☕ Support FDOWN</a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
