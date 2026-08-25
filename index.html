@@ -1,500 +1,459 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>FDOWN (FBDOWN) - Ad-Free AI Facebook Video Downloader Online</title>
-    <meta name="description" content="FDOWN is the best Ad-Free, AI-powered Facebook Video Downloader Online. Download Facebook Videos instantly to your computer or mobile for free without annoying ads. FBDOWN alternative.">
-    <meta name="keywords" content="fdown, fbdown, fdown.net, fbdown.net, ad-free facebook video downloader, ai facebook downloader, download facebook videos, facebook online downloader, ai video downloader, save fb videos, free facebook video downloader">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="FDOWN">
-    <meta name="generator" content="FDOWN">
-    <link rel="canonical" href="https://satish2832.github.io/fdown">
-    
-    <!-- Open Graph for Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="FDOWN">
-    <meta property="og:title" content="FDOWN (FBDOWN) - Ad-Free AI Facebook Video Downloader Online">
-    <meta property="og:description" content="Convert and Download any Facebook video to MP4 instantly. Free, no ads, no signup. Works on all devices.">
-    <meta property="og:url" content="https://satish2832.github.io/fdown">
-    <meta property="og:image" content="https://satish2832.github.io/fdown/favicon.ico">
-    <meta property="og:image:type" content="image/x-icon">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="FDOWN | Facebook Video Downloader">
-    <meta property="og:locale" content="en_US">
-    <meta property="article:modified_time" content="2026-07-18T22:30:00+05:30">
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FDOWN (FBDOWN) - Ad-Free AI Facebook Video Downloader Online">
-    <meta name="twitter:description" content="Convert and Download Facebook to MP4. Free, no signup, Ad-free. Works on mobile.">
-    <meta name="twitter:image" content="https://satish2832.github.io/fdown/favicon.ico">
-    <meta name="twitter:image:alt" content="FDOWN | Facebook Video Downloader">
-    
-    <!-- Icons -->
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
-    <link rel="icon" type="image/x-icon" sizes="96x96" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
-    
-    <!-- PWA / Mobile Web App Settings -->
-    <meta name="theme-color" content="#1abc9c">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="FDOWN">
-    <meta name="application-name" content="FDOWN">
-    <!-- Google Fonts for Premium Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-    <style>
-        :root {
-            --brand-dark: #2c3e50;
-            --brand-accent: #1abc9c;
-            --bg-color: #ecf0f1;
-            --text-main: #333333;
-            --text-muted: #7f8c8d;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        /* Navbar Styling - Premium & Aligned */
-        .navbar-custom {
-            background-color: var(--brand-dark);
-            border: none;
-            border-radius: 0;
-            margin-bottom: 0;
-            min-height: 70px; /* Slightly taller for premium feel */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        
-        /* Flex container for the whole navbar to ensure perfect vertical alignment */
-        .navbar-custom .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 70px;
-        }
+  <title>Facebook Video Downloader – Download Public Videos Online | FDOWN</title>
+  <meta name="description" content="Download publicly available Facebook videos online with FDOWN. Paste a video link, choose an available quality, and save it to your device. Free, simple and ad-free.">
+  <link rel="canonical" href="https://satish2832.github.io/fdown/">
 
-        .navbar-custom .navbar-header {
-            display: flex;
-            align-items: center;
-        }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FDOWN">
+  <meta property="og:title" content="Facebook Video Downloader – FDOWN">
+  <meta property="og:description" content="A simple tool for downloading publicly available Facebook videos online. Paste a link and choose an available download option.">
+  <meta property="og:url" content="https://satish2832.github.io/fdown/">
+  <meta property="og:image" content="https://satish2832.github.io/fdown/og-image.png">
+  <meta property="og:image:alt" content="FDOWN Facebook Video Downloader">
 
-        .navbar-custom .navbar-collapse {
-            border-top: none;
-            box-shadow: none;
-            flex-grow: 1;
-            display: flex !important; /* Force flex in desktop */
-            justify-content: space-between;
-            align-items: center;
-        }
+  <!-- X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Facebook Video Downloader – FDOWN">
+  <meta name="twitter:description" content="Download publicly available Facebook videos online with a simple link-based workflow.">
+  <meta name="twitter:image" content="https://satish2832.github.io/fdown/og-image.png">
 
-        .navbar-custom .navbar-nav {
-            display: flex;
-            flex-direction: row;
-            margin: 0;
-        }
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fbdownlo.com">
+  <link rel="dns-prefetch" href="//fbdownlo.com">
 
-        .navbar-custom .navbar-nav > li > a {
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 500;
-            font-size: 15px;
-            padding: 10px 15px;
-            margin: 0 5px;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 6px; /* Space between icon and text */
-        }
-        
-        .navbar-custom .navbar-nav > li > a:hover {
-            color: #ffffff;
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-1px);
-        }
+  <style>
+    :root {
+      --bg: #f6f8f8;
+      --surface: #ffffff;
+      --surface-soft: #eef7f5;
+      --text: #12211f;
+      --muted: #60706d;
+      --line: #dce6e3;
+      --brand: #0f766e;
+      --brand-dark: #0b5d57;
+      --accent: #14b8a6;
+      --focus: #2563eb;
+      --shadow: 0 20px 60px rgba(15, 42, 38, .10);
+      --radius: 24px;
+      --max: 1160px;
+    }
 
-        .navbar-custom .navbar-brand {
-            color: #ffffff;
-            font-size: 24px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            height: auto;
-            padding: 0;
-            margin-right: 30px;
-            transition: opacity 0.3s ease;
-            letter-spacing: -0.5px;
-        }
-        
-        .navbar-custom .navbar-brand:hover {
-            opacity: 0.9;
-        }
-        
-        /* Premium Logo Icons */
-        .logo-icon {
-            background: linear-gradient(135deg, #1abc9c, #16a085);
-            color: white;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            font-weight: bold;
-            font-size: 24px;
-            font-family: serif;
-            margin-right: 12px;
-            box-shadow: 0 2px 6px rgba(26, 188, 156, 0.4);
-        }
-        
-        .main-logo-icon {
-            background: linear-gradient(135deg, #1abc9c, #16a085);
-            color: white;
-            border-radius: 14px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 70px;
-            height: 70px;
-            font-weight: bold;
-            font-size: 46px;
-            font-family: serif;
-            margin-right: 16px;
-            vertical-align: middle;
-            box-shadow: 0 8px 24px rgba(26, 188, 156, 0.3);
-            transform: translateY(-2px);
-        }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
 
-        /* Mobile Adjustments for Navbar Flex */
-        @media (max-width: 767px) {
-            .navbar-custom .container {
-                flex-direction: column;
-                align-items: stretch;
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--brand); }
+    :focus-visible { outline: 3px solid rgba(37, 99, 235, .35); outline-offset: 3px; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: auto;
+      background: #fff; color: #000; padding: 12px 18px; z-index: 999;
+    }
+    .skip-link:focus { left: 12px; top: 12px; }
+
+    .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(255,255,255,.90);
+      border-bottom: 1px solid rgba(220,230,227,.85);
+    }
+    .nav {
+      min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.04em; font-size: 1.25rem; }
+    .brand-mark {
+      width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--brand), var(--accent)); color: #fff; font-size: 1.35rem;
+      box-shadow: 0 8px 20px rgba(15,118,110,.22);
+    }
+    .nav-links { display: flex; align-items: center; gap: 8px; }
+    .nav-links a { padding: 9px 12px; color: #41504d; font-size: .93rem; font-weight: 650; border-radius: 10px; }
+    .nav-links a:hover { background: var(--surface-soft); color: var(--brand); }
+    .nav-cta { background: var(--brand); color: #fff !important; padding-inline: 16px !important; }
+    .nav-cta:hover { background: var(--brand-dark) !important; color: #fff !important; }
+
+    .hero {
+      position: relative; overflow: hidden; padding: 76px 0 52px;
+      background: radial-gradient(circle at 50% 0%, #d9f4ee 0, transparent 48%);
+    }
+    .hero::after {
+      content: ""; position: absolute; width: 500px; height: 500px; border-radius: 50%;
+      background: rgba(20,184,166,.07); filter: blur(20px); right: -240px; bottom: -260px;
+    }
+    .hero-grid { position: relative; z-index: 1; text-align: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px;
+      border: 1px solid #bde6dd; background: rgba(255,255,255,.75); border-radius: 999px;
+      color: var(--brand-dark); font-size: .84rem; font-weight: 750;
+    }
+    h1 { max-width: 850px; margin: 20px auto 14px; font-size: clamp(2.15rem, 5vw, 4.5rem); line-height: 1.04; letter-spacing: -.055em; }
+    .hero-copy { max-width: 720px; margin: 0 auto; color: var(--muted); font-size: clamp(1rem, 2vw, 1.18rem); }
+    .tool-card {
+      width: min(900px, 100%); margin: 36px auto 0; padding: 10px;
+      background: rgba(255,255,255,.88); border: 1px solid rgba(255,255,255,.95);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+    .tool-frame { width: 100%; height: 280px; border: 0; border-radius: 17px; background: #fff; }
+    .trust-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 20px; margin: 18px auto 0; color: #51615e; font-size: .88rem; }
+    .trust-row span::before { content: "✓"; color: var(--brand); font-weight: 900; margin-right: 7px; }
+
+    .section { padding: 76px 0; }
+    .section-alt { background: var(--surface); }
+    .section-head { max-width: 760px; margin-bottom: 34px; }
+    .section-head.center { text-align: center; margin-inline: auto; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.55rem); line-height: 1.15; letter-spacing: -.04em; margin: 0 0 12px; }
+    h3 { font-size: 1.08rem; margin: 0 0 8px; letter-spacing: -.015em; }
+    .lead { color: var(--muted); margin: 0; }
+
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px;
+      box-shadow: 0 8px 30px rgba(15,42,38,.035);
+    }
+    .step-number {
+      width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%;
+      background: var(--surface-soft); color: var(--brand); font-weight: 850; margin-bottom: 18px;
+    }
+    .card p { margin: 0; color: var(--muted); }
+
+    .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .feature { display: flex; gap: 15px; align-items: flex-start; }
+    .feature-icon {
+      flex: 0 0 40px; width: 40px; height: 40px; display: grid; place-items: center;
+      border-radius: 12px; background: var(--surface-soft); color: var(--brand); font-weight: 850;
+    }
+    .feature p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+    .content-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, .8fr); gap: 48px; align-items: start; }
+    .prose p, .prose li { color: var(--muted); }
+    .prose h3 { margin-top: 30px; font-size: 1.25rem; color: var(--text); }
+    .prose ul { padding-left: 20px; }
+
+    .notice {
+      background: #fffaf0; border: 1px solid #f2dfad; border-radius: 16px; padding: 20px;
+      font-size: .93rem; color: #66511c;
+    }
+    .notice strong { color: #4f3d0d; }
+
+    .faq { display: grid; gap: 12px; max-width: 880px; margin: 0 auto; }
+    details {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 0 20px;
+    }
+    summary { cursor: pointer; list-style: none; padding: 19px 30px 19px 0; font-weight: 750; position: relative; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; position: absolute; right: 0; color: var(--brand); font-size: 1.3rem; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: 0 0 19px; color: var(--muted); }
+
+    .support {
+      display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 30px;
+      border-radius: 24px; background: linear-gradient(135deg, #0f766e, #115e59); color: #fff;
+    }
+    .support h2 { font-size: 1.65rem; margin-bottom: 6px; }
+    .support p { margin: 0; opacity: .85; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; white-space: nowrap;
+      background: #fff; color: #123 !important; padding: 12px 18px; border-radius: 12px; font-weight: 800;
+    }
+
+    footer { border-top: 1px solid var(--line); padding: 42px 0; background: #f1f5f4; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 30px; align-items: flex-start; }
+    .footer-copy { max-width: 660px; color: var(--muted); font-size: .88rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: .9rem; font-weight: 700; }
+
+    @media (max-width: 800px) {
+      .nav { min-height: 62px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero { padding-top: 58px; }
+      .steps, .features, .content-grid { grid-template-columns: 1fr; }
+      .section { padding: 58px 0; }
+      .support, .footer-grid { flex-direction: column; align-items: flex-start; }
+      .tool-frame { height: 300px; }
+    }
+    @media (max-width: 480px) {
+      .container { width: min(100% - 24px, var(--max)); }
+      .hero { padding-bottom: 36px; }
+      .card { padding: 22px; }
+      .tool-card { padding: 6px; border-radius: 18px; }
+      .tool-frame { border-radius: 13px; }
+    }
+  </style>
+
+  <!-- Structured data for search engines and AI systems -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://satish2832.github.io/fdown/#website",
+        "url": "https://satish2832.github.io/fdown/",
+        "name": "FDOWN",
+        "description": "A web-based tool for downloading publicly available Facebook videos."
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://satish2832.github.io/fdown/#app",
+        "name": "FDOWN",
+        "url": "https://satish2832.github.io/fdown/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser",
+        "description": "A web-based tool that processes supported publicly available Facebook video links and provides available download options.",
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://satish2832.github.io/fdown/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I download a Facebook video with FDOWN?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Copy the link to a supported publicly available Facebook video, paste it into the FDOWN tool, and select an available download option."
             }
-            .navbar-custom .navbar-header {
-                justify-content: space-between;
-                width: 100%;
-                padding: 10px 0;
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to install an app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. FDOWN is designed to work in a modern web browser without requiring a separate application installation."
             }
-            .navbar-custom .navbar-collapse {
-                flex-direction: column;
-                align-items: stretch;
-                display: none !important; /* Hide by default on mobile for collapse toggle */
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download any Facebook video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Availability depends on the video's accessibility, technical support and applicable permissions. Only download content when you have the right or permission to do so."
             }
-            .navbar-custom .navbar-collapse.in {
-                display: flex !important;
-            }
-            .navbar-custom .navbar-nav {
-                flex-direction: column;
-            }
-            .navbar-custom .navbar-nav > li > a {
-                padding: 12px 15px;
-            }
-        }
-
-        /* Jumbotron / Main Area */
-        .jumbotron-custom {
-            background-color: transparent;
-            padding-top: 60px;
-            padding-bottom: 40px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .brand-title-large {
-            font-size: 42px;
-            color: var(--brand-dark);
-            font-weight: 700;
-            display: inline-block;
-            vertical-align: middle;
-            letter-spacing: -1px;
-        }
-
-        .jumbotron-custom h1 {
-            font-size: 32px;
-            font-weight: 700;
-            color: var(--brand-dark);
-            margin-top: 30px;
-            letter-spacing: -0.5px;
-        }
-        .jumbotron-custom h2 {
-            font-size: 18px;
-            color: var(--text-muted);
-            font-weight: 500;
-            margin-top: 8px;
-            margin-bottom: 40px;
-        }
-
-        /* Embedded Widget Area */
-        .widget-container {
-            max-width: 800px;
-            margin: 30px auto;
-            position: relative;
-            background: transparent;
-            padding: 0;
-        }
-
-        /* How to Use Button */
-        .btn-howto {
-            background-color: #3498db;
-            color: #ffffff;
-            border: none;
-            border-radius: 8px;
-            padding: 14px 30px;
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .btn-howto:hover {
-            background-color: #2980b9;
-            color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-        }
-
-        /* Unique Content Container - Premium Look */
-        .unique-content {
-            background-color: #ffffff;
-            border-radius: 16px;
-            padding: 40px;
-            margin-top: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.04);
-            text-align: left;
-            line-height: 1.8;
-            border: 1px solid rgba(0,0,0,0.02);
-        }
-        
-        .unique-content h2 {
-            color: var(--brand-accent);
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 28px;
-            letter-spacing: -0.5px;
-        }
-
-        .unique-content h3 {
-            color: var(--brand-dark);
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-size: 22px;
-            letter-spacing: -0.3px;
-        }
-
-        .unique-content p {
-            color: #5a6c7d;
-            font-size: 16px;
-            margin-bottom: 16px;
-        }
-
-        .unique-content ul, .unique-content ol {
-            padding-left: 20px;
-            margin-bottom: 24px;
-        }
-
-        .unique-content li {
-            font-size: 16px;
-            color: #5a6c7d;
-            margin-bottom: 12px;
-        }
-        
-        .unique-content li strong {
-            color: var(--brand-dark);
-        }
-
-        /* Footer */
-        .footer-links {
-            text-align: center;
-            padding: 40px 0;
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-top: 20px;
-        }
-        .footer-links strong {
-            color: var(--brand-dark);
-            font-size: 16px;
-        }
-        .footer-links .nav-links {
-            margin: 15px 0 25px 0;
-        }
-        .footer-links a {
-            color: var(--brand-dark);
-            font-weight: 600;
-            margin: 0 12px;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-        .footer-links a:hover {
-            color: var(--brand-accent);
-        }
-        .footer-links p {
-            font-size: 13px;
-            line-height: 1.6;
-            margin-bottom: 8px;
-            opacity: 0.8;
-        }
-        
-        /* Utility */
-        .icon-align {
-            display: inline-flex;
-            align-items: center;
-        }
-    </style>
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-custom">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <div class="logo-icon">f</div> FDOWN
-                </a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar" style="background-color:white;"></span>
-                    <span class="icon-bar" style="background-color:white;"></span>
-                    <span class="icon-bar" style="background-color:white;"></span>
-                </button>
-            </div>
-            
-            <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="nav navbar-nav">
-                    <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> How to?</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span> More <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Private Downloader</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><img src="https://flagcdn.com/w20/us.png" alt="EN" style="border-radius:2px;"> EN <span class="caret"></span></a></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li><a href="#" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 10px 20px;"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" width="16" alt="Chrome"> Chrome Extension</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Contact us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content Area -->
-    <div class="jumbotron-custom">
-        <div class="container">
-            <!-- Logo Section -->
-            <div style="margin-bottom: 10px;">
-                <div class="main-logo-icon">f</div> 
-                <span class="brand-title-large">FDOWN</span>
-            </div>
-            
-            <h1>Facebook Video Downloader</h1>
-            <h2>Download Facebook Videos Online Instantly &mdash; <span style="color:var(--brand-accent); font-weight:700;">100% Ad-Free & AI-Powered</span></h2>
-            
-            <!-- Embedded Widget Area -->
-            <div class="widget-container">
-                <iframe src="https://fbdownlo.com/widget" width="100%" height="280" frameborder="0" allowtransparency="true"></iframe>
-                
-                <div style="margin-top: 0px; text-align: center;">
-                    <p style="font-size: 14px; color: #7f8c8d; margin-bottom: 12px; font-weight: 500; line-height: 1.5;">🙏 <strong>Please, we need your help to keep this site alive.</strong> We are paying huge server costs out of pocket every month just to keep FDOWN 100% ad-free and lightning fast for you. If you use our tool, <em>please</em> consider buying us a coffee. Even a small donation means everything to us and helps keep the servers running!</p>
-                    <a href="https://buymeacoffee.com/downy" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background-color: #FFDD00; color: #000000; font-weight: 700; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 12px rgba(255, 221, 0, 0.3); transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(255, 221, 0, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(255, 221, 0, 0.3)';">
-                        <span style="font-size: 18px;">☕</span> Buy me a coffee
-                    </a>
-                </div>
-            </div>
-            
-            <!-- How to Use Button -->
-            <button type="button" class="btn-howto">
-                <span class="glyphicon glyphicon-play-circle"></span> Watch How to Use FDOWN
-            </button>
-            
-        </div>
+<header class="site-header">
+  <nav class="container nav" aria-label="Primary navigation">
+    <a class="brand" href="./" aria-label="FDOWN home">
+      <span class="brand-mark" aria-hidden="true">f</span>
+      <span>FDOWN</span>
+    </a>
+    <div class="nav-links">
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#download-tool">Use downloader</a>
     </div>
+  </nav>
+</header>
 
-    <!-- Unique Extended Content -->
+<main id="main-content">
+  <section class="hero" aria-labelledby="page-title">
+    <div class="container hero-grid">
+      <span class="eyebrow">Simple • Browser-based • Ad-free experience</span>
+      <h1 id="page-title">Facebook Video Downloader</h1>
+      <p class="hero-copy">
+        Paste a supported public Facebook video link and use the available download options to save it to your device.
+      </p>
+
+      <div class="tool-card" id="download-tool">
+        <iframe
+          class="tool-frame"
+          src="https://fbdownlo.com/widget"
+          title="FDOWN Facebook video download tool"
+          loading="eager"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="clipboard-read; clipboard-write"
+        ></iframe>
+      </div>
+
+      <div class="trust-row" aria-label="Tool highlights">
+        <span>No software installation</span>
+        <span>Works on modern browsers</span>
+        <span>Use only with appropriate rights</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works" aria-labelledby="how-title">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="unique-content">
-                    <h2>The Best Way to Download Facebook Videos Online</h2>
-                    
-                    <p>Welcome to <strong>FDOWN</strong>, the premier <strong>ad-free</strong> and <strong>AI-powered</strong> online companion for saving Facebook videos directly to your device. Whether you are using a smartphone, tablet, or desktop computer, our seamless integration uses advanced AI algorithms to instantly fetch, analyze, and download any public Facebook video in just a few clicks. You don't need to install heavy software, deal with complicated setups, or navigate through intrusive pop-up ads&mdash;simply use the smart tool above and get your MP4 file ready for offline viewing in a clean, distraction-free environment.</p>
+      <div class="section-head center">
+        <h2 id="how-title">How to download a Facebook video</h2>
+        <p class="lead">A clear three-step workflow designed for desktop and mobile browsers.</p>
+      </div>
 
-                    <h3>Why Choose FDOWN for Facebook Video Downloads?</h3>
-                    <p>Downloading content from Facebook shouldn't be a hassle. We built FDOWN keeping simplicity, speed, and quality in mind. Here is why millions of users trust our downloader every day:</p>
-                    <ul>
-                        <li><strong>Incredible Speeds:</strong> Our tool is optimized to process Facebook video URLs and generate download links within seconds. Say goodbye to endless loading screens!</li>
-                        <li><strong>High Definition (HD) Quality:</strong> We provide you with the best available resolution for every video. If the original uploader uploaded a 1080p or 4K video, you can download it in pristine HD quality.</li>
-                        <li><strong>100% Free & Unlimited:</strong> There are no paywalls, hidden fees, or limits on how many videos you can save. Download to your heart's content!</li>
-                        <li><strong>No App Installation Required:</strong> Since FDOWN is entirely web-based, you only need a modern web browser (like Chrome, Safari, Firefox, or Edge) to use it. Save your device storage for your newly downloaded videos.</li>
-                        <li><strong>Cross-Device Compatibility:</strong> FDOWN works flawlessly across Windows, macOS, Linux, Android, and iOS devices. Take your videos anywhere.</li>
-                        <li><strong>AI-Powered Engine:</strong> Our smart AI technology instantly analyzes the video URL and intelligently fetches the highest quality download link without manual intervention, making the process faster and more robust than ever.</li>
-                        <li><strong>Completely Ad-Free Experience:</strong> Unlike other downloaders cluttered with pop-ups and fake download buttons, FDOWN is a premium, clean, and 100% ad-free environment.</li>
-                    </ul>
-
-                    <h3>How to Save Videos to Your Gallery or Computer</h3>
-                    <p>It's never been easier. Follow these three simple steps:</p>
-                    <ol>
-                        <li><strong>Find your video:</strong> Open the Facebook app or website and locate the video you want to keep. Click on the "Share" button and select "Copy Link".</li>
-                        <li><strong>Paste the Link:</strong> Come back to FDOWN and paste the copied URL into our download widget at the top of the page.</li>
-                        <li><strong>Download & Enjoy:</strong> Click the download icon, choose your preferred video quality (Standard or HD), and the video will instantly begin downloading to your device's default downloads folder.</li>
-                    </ol>
-
-                    <h3>Private Facebook Videos & Reels</h3>
-                    <p>Wondering if you can download Facebook Reels or videos from private groups? The answer is yes! FDOWN's intelligent AI engine supports downloading short-form Reels with the exact same ease as regular videos. For private videos, ensure you have proper access to the source and let our completely ad-free Private Downloader tool (accessible from the top menu) seamlessly and securely fetch the media for you.</p>
-                </div>
-            </div>
-        </div>
+      <div class="steps">
+        <article class="card">
+          <div class="step-number">1</div>
+          <h3>Copy the video link</h3>
+          <p>Open the supported Facebook video or Reel and use Facebook's sharing options to copy its link.</p>
+        </article>
+        <article class="card">
+          <div class="step-number">2</div>
+          <h3>Paste the link into FDOWN</h3>
+          <p>Return to this page and paste the copied URL into the downloader tool.</p>
+        </article>
+        <article class="card">
+          <div class="step-number">3</div>
+          <h3>Choose an available option</h3>
+          <p>Process the supported link and select an available download quality or format.</p>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <!-- Footer -->
+  <section class="section section-alt" aria-labelledby="features-title">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-links">
-                    <strong>FDOWN Video Downloader Online</strong>
-                    
-                    <div class="nav-links">
-                        <a href="#">How to Download</a>
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Contact us</a>
-                        <a href="#">About</a>
-                    </div>
-                    
-                    <p>We do not host any videos on our servers. All videos that you download are hosted on Facebook's CDNs.</p>
-                    <p><strong>This website is a Social Media Services website and is not associated by any means to Facebook or the Facebook brand and doesn't have anything to do with Meta Platforms, Inc.</strong></p>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="section-head center">
+        <h2 id="features-title">A simpler way to save supported videos</h2>
+        <p class="lead">FDOWN focuses on a straightforward browser experience instead of unnecessary screens, software or intrusive advertising.</p>
+      </div>
 
-    <!-- jQuery & Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+      <div class="features">
+        <article class="card feature">
+          <div class="feature-icon" aria-hidden="true">↗</div>
+          <div><h3>Link-based workflow</h3><p>Start with the video URL rather than installing additional software.</p></div>
+        </article>
+        <article class="card feature">
+          <div class="feature-icon" aria-hidden="true">◉</div>
+          <div><h3>Device-friendly</h3><p>Use the service through a modern desktop or mobile browser.</p></div>
+        </article>
+        <article class="card feature">
+          <div class="feature-icon" aria-hidden="true">✓</div>
+          <div><h3>Available quality options</h3><p>Select from the download options made available for the supported source.</p></div>
+        </article>
+        <article class="card feature">
+          <div class="feature-icon" aria-hidden="true">⌁</div>
+          <div><h3>Focused experience</h3><p>A clean interface designed to make the primary task easy to understand.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container content-grid">
+      <div class="prose">
+        <h2 id="about-title">About FDOWN</h2>
+        <p>
+          FDOWN is a web-based Facebook video downloader designed around a simple URL workflow. The page provides a clear entry point for users who want to process supported, publicly available video links in a modern browser.
+        </p>
+
+        <h3>What the tool is designed to do</h3>
+        <p>
+          The service is intended to help users process supported Facebook video URLs and access available download options. Results can vary depending on the source, video availability, technical changes and access permissions.
+        </p>
+
+        <h3>Who this page is for</h3>
+        <p>
+          This page is useful for people who need a simple browser-based workflow for saving content they own, created, are licensed to use, or otherwise have permission to download.
+        </p>
+
+        <h3>Important usage information</h3>
+        <ul>
+          <li>Respect copyright, privacy and platform rules.</li>
+          <li>Only download content when you have the necessary rights or permission.</li>
+          <li>Do not use the service to bypass access restrictions or obtain content you are not authorized to access.</li>
+          <li>Download availability and quality depend on the supported source.</li>
+        </ul>
+      </div>
+
+      <aside class="notice" aria-label="Important notice">
+        <strong>Rights and permissions matter.</strong><br>
+        FDOWN does not claim ownership of third-party content. You are responsible for ensuring that your use of downloaded material is lawful and authorized.
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-head center">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <p class="lead">Direct answers to common questions about using the downloader.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>How do I use FDOWN?</summary>
+          <p>Copy a supported public Facebook video link, paste it into the tool at the top of this page, and select an available download option.</p>
+        </details>
+        <details>
+          <summary>Do I need to install an application?</summary>
+          <p>No separate application is required for the basic browser-based workflow. Use a modern compatible browser.</p>
+        </details>
+        <details>
+          <summary>Does FDOWN work on mobile devices?</summary>
+          <p>The page is responsive and intended to be used on modern mobile and desktop browsers. The final download behavior may vary by browser and device.</p>
+        </details>
+        <details>
+          <summary>Can every Facebook video be downloaded?</summary>
+          <p>No. Availability depends on technical support, accessibility, permissions and the source itself. Restricted or unsupported content may not be available.</p>
+        </details>
+        <details>
+          <summary>Is FDOWN associated with Facebook or Meta?</summary>
+          <p>No. FDOWN is an independent service and is not affiliated with, endorsed by or sponsored by Facebook or Meta.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="support">
+        <div>
+          <h2>Support an ad-free experience</h2>
+          <p>If FDOWN is useful to you, optional support helps with ongoing infrastructure and maintenance costs.</p>
+        </div>
+        <a class="button" href="https://buymeacoffee.com/downy" target="_blank" rel="noopener noreferrer">☕ Support FDOWN</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-copy">
+      <strong>FDOWN</strong>
+      <p>Independent web-based video download tool. FDOWN does not host or claim ownership of third-party videos.</p>
+      <p>Facebook and Meta are trademarks of their respective owners. FDOWN is not affiliated with, endorsed by or sponsored by Meta or Facebook.</p>
+    </div>
+    <div class="footer-links" aria-label="Footer navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#about">About</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
